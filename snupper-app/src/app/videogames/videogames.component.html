@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./videogames">VideoGames</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./movies">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./electronics">Electronics</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="" class="nav-link">Carro</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <h3>{{ station }}</h3>
+  </div>
+</div>
+      
+<div class="container">
+  <div class="row">
+    <div class="card child" *ngFor="let video of videos; let idx = index" style="width: 18rem;">
+      <img class="card-img-top" src="{{video.url}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ video.name }}</h5>
+        <p class="card-text text-left">{{ video.excerpt }}</p>
+        <p class="card-text"><strong>${{ video.price }}</strong></p>
+        <a href="#" class="btn btn-primary" (click)="addToCart(event, video.id)">Agregar</a>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="./movies" class="btn btn-primary">ir a siguiente estación</a>

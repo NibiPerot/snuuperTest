@@ -1,0 +1,25 @@
+{
+    "success" : true,
+    "station" : "electronics",
+    "items" : [
+        {
+            "id": 1,
+            "name" : "Android TV",
+            "excerpt" : "Android TV Quad Core V 7.0",
+            "price" : 150,
+            "url" : "http:xxx.xx"
+        },{
+            "id": 2,
+            "name" : "Android TV 2 ",
+            "excerpt" : "Android TV 2 Quad Core V 7.0",
+            "price" : 160,
+            "url" : "http:xxx.xx"
+        },{
+            "id": 3,
+            "name" : "Android TV 3",
+            "excerpt" : "Android TV  3 Quad Core V 7.0",
+            "price" : 170,
+            "url" : "http:xxx.xx"
+        }
+    ]
+}

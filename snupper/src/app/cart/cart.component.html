@@ -1,0 +1,17 @@
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>Total : ${{total}}</h1>
+        <div class="card" *ngFor="let item of items; let idx = index" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}}</h5>
+                <p class="card-text">{{item.excerpt}}</p>
+                <p class="card-text">${{item.price}}</p>
+                <a href="#" class="btn btn-primary" (click) ="removeItem(event, item)">Remover</a>            
+            </div>
+        </div>
+    </div>
+</div>  
+<a href="./videogames" class="btn btn-primary" (click) ="removeItem(event, item)">Volver a VideoJuegos</a>            
+<a href="./movies" class="btn btn-primary" (click) ="removeItem(event, item)">Vovler a Películas</a>            
+<a href="./electronics" class="btn btn-primary" (click) ="removeItem(event, item)">Volver a Electronica</a>            
